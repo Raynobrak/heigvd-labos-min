@@ -131,7 +131,21 @@ fake and the one when the image is real.
 ❓ Provide three colorized images with the model that you find interesting
 (e.g. well colorized, artistic, disastrous result, ...).
 
-TODO : plus que ces deux questions
+### Bonne colorisation
+![image](bonne-colorisation.png)
+
+### Mauvaise colorisation
+![image](mauvaise-colorisation.png)
+
+Sur cette image, on peut voir que l'individu a été colorié en vert. Cela peut être du au fait que le dataset est principalement composé de paysages, donc il y a un certain biais.
+
+### Koala
+
+![image](koala-artistique.png)
+
+Le modèle a un peu trop colorisé le koala, nous trouvons ce résultat "artistique".
 
 ❓ Provide an image you have in grayscale (convert one in graycale if you don't have any)
 and apply the model on your image.
+
+![image](colorisation-test.jpeg)
