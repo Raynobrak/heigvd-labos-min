@@ -68,14 +68,70 @@ Plot de la meilleure tournée euclidienne obtenue (31,23 km):
 
 
 ### Mona Lisa
+
 >The way you extracted the color palette
+
+Nous avons utilisé l'algorithme kMeans afin de créer une palette de 32 couleurs. Cette technique nous permet d'extraire les 32 couleurs les plus "importantes" de l'image.
 
 >Your parameters N_SHAPES_LIST, N_INDIVIDUAL_LIST
 
+Nous n'avons pas modifié les paramètres initiaux :
+```
+N_SHAPES_LIST = [120, 60, 20]
+N_INDIVIDUAL_LIST = [250, 500, 500]
+```
+
 >Your parameters to train the genetic algorithm
+
+Nous avons modifié le paramètre `parent_selection_type` à `tournament` au lieu de `rank`.
+```
+ga_instance = pygad.GA(
+    num_generations=1000,
+    num_parents_mating=round(0.2 * len(initial_population)),
+    fitness_func=fitness_function(canvas, transparency),
+    initial_population=initial_population,
+    gene_type=float,
+    gene_space=gene_space,
+    on_generation=on_gen(canvas, transparency),
+    random_mutation_min_val=-0.15,
+    random_mutation_max_val=0.15,
+    mutation_type="adaptive",
+    mutation_probability=[0.03, 0.01],
+    crossover_type="two_points",
+    crossover_probability=0.8,
+    parent_selection_type="tournament",
+    stop_criteria="saturate_10",
+)
+```
 
 >How you define the chromosomes (what are the genes you defined and what they represent)
 
+Les chromosomes sont représentés par un tableau de 6 valeurs : 
+1. Le code couleur (indice dans la palette, entre 0 et 31)
+2. la position x de l'ellipse
+3. la position y de l'ellipse
+4. la largeur de l'ellipse
+5. la hauteur de l'ellipse
+6. l'angle (rotation) de l'ellipse
+
 >Initial image you choosed and the resulting image you obtained
 
+Image cible :
+![alt text](image/Gromit_image.jpg)
+
+Image obtenue : 
+![alt text](image/gromit_generated.jpg)
+
 >Fitness plots
+
+Étape 1 :
+
+![alt text](image/step1.png)
+
+Étape 2 :
+
+![alt text](image/step2.png)
+
+Étape 3 :
+
+![alt text](image/step3.png)
