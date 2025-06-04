@@ -181,3 +181,33 @@ l-s (pas de e)
 -is--x (é, e et e remplacés)
 
 ch-nt-nt (e et e remplacés)
+
+## Comparaison et analyse
+
+| Réussite\Modèle                        | ChatGPT 4o | ChatGPT o3 | ChatGPT o4-mini | Claude | Gemini | Deepseek | Deepseek Deepthink R1 |
+|----------------------------------------|------------|------------|-----------------|--------|--------|----------|-----------------------|
+| Expérience 1 - Abandon                 | X          |            |                 | X      | X      | ~        | X                     |
+| Expérience 1 - Poême correct           |            | X          | X               |        |        |          |                       |
+| Expérience 2 - Abandon                 |            |            |                 |        |        |          |                       |
+| Expérience 2 - Transformation correcte |            | X          | X               | X      |        |          |                       |
+
+
+### Première expérience
+
+Le résultat de la première expérience est que seuls les modèles de "réfléxion", donc ChatGPT 03 et 04-mini ont réussi la tâche, à l'exception de Deepseek Deepthink R1 qui a finalement abandonné.
+
+La première expérience offre un bon dilemme aux modèles de langages : Il faut choisir entre relever un défi difficile ou dire que c'est impossible. Clairement, le défi proposé n'est pas impossible à proprement parler mais il est effectivement très complexe.
+Nous supposons que les modèles de réflexion ont mieux réussi cette tâche car ils ont la possibilité de relire leur réponse un nombre presque illimité de fois. Typiquement, ChatGPT o3 et o4-mini peuvent exécuter du code python permettant de vérifier que les contraintes ont été respectées.
+Malgré cela, même Deepseek Deepthink R1 n'a pas réussi la tâche. Il a cependant très bien défendu pourquoi il a choisi d'abandonner.
+
+Les LLMs classique n'ont en revanche pas cette possibilité et ils doivent avoir juste du premier coup. Pour pouvoir "relire" leur réponse, il faudrait un deuxième prompt.
+Les LLMs classiques ont systématiquement choisi d'abandonner. C'est un résultat décevant mais préférable au fait de donner une mauvaise réponse, comme indiqué dans l'énoncé. Le seul modèle n'ayant pas respecté la consigne est Deepseek, qui a écrit un "quatrain octosyllabique sans i ni e" mais qui, dans la même réponse, nous dit qu'il "préfère donc ne pas soumettre de poème plutôt que de transgresser tes règles". C'est un entre-deux incohérent.
+
+Il est intéressant de noter que les LLM ayant réussi la tâche ont également réussi à respecter le nombre de syllabes par vers. Le nombre de syllabes est une caractéristique orale et donc compliquée à vérifier dans un texte.
+
+### Deuxième expérience
+
+## Conclusion
+
+
+
