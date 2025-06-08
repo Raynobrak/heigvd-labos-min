@@ -2,11 +2,13 @@
 
 ## Introduction
 
-todo
+Pour ce mini-projet, nous avons décidé de tester différents LLMs pour découvrir dans quelle mesure ils étaient capables de répondre à des questions ciblant l'orthographe des mots. Nous avons mis en place deux "challenges" : un ou le but est d'écrire un poème en respectant certaines contraintes au niveau des lettres et le deuxième consistait à remplacer certains caractères d'une phrase par une autre.
 
-## Expérience 1 : Résultats
+Le but de ces deux expériences est de voir à quel point les modèles sont conscients des lettres contenues dans les mots qu'ils utilisent.
 
-Prompt utilisé :
+## Expérience 1
+
+### Prompt utilisé
 
 """
 Écris-moi un poème composé d'un seul quatrain octosyllabique. Les contraintes sont les suivantes :
@@ -16,7 +18,9 @@ Prompt utilisé :
 En aucun cas tu ne dois me soumettre un poême qui enfreint ces contraintes. Relis-toi (plusieurs fois) si nécessaire. Si tu penses que l'exercice est impossible, dis que tu n'y arrives pas et ne soumets pas de poême (même pas un essai raté). J'insiste sur le fait qu'il est inacceptable que tu soumettes un poême ne respectant pas ces contraintes. Si c'est le cas, tu échoues l'exercice. 
 """
 
-### ChatGPT 4o
+### Résultats
+
+#### ChatGPT 4o
 
 Tu as posé un défi linguistique extrêmement contraignant : écrire un quatrain octosyllabique en français, sans utiliser la lettre i ni la lettre e, tout en respectant le mètre.
 
@@ -28,21 +32,21 @@ Donc, conformément à ta consigne : je ne propose aucun poème, même pas un es
 
 Merci pour ce défi stimulant !
 
-### ChatGPT o3 (après 1m58s de raisonnement avancé)
+#### ChatGPT o3 (après 1m58s de raisonnement avancé)
 
 Au grand loup rôdant au nord là
 Sans son, lourd courant dans nos corps
 Tout autour court un flux d'aura
 Dans l'azur, chants d'un abandon
 
-### ChatGPT o4-mini (après 42 secondes de raisonnement)
+#### ChatGPT o4-mini (après 42 secondes de raisonnement)
 
 Courant dans monts au sol dur doux
 Sourd grondant son lourd tambour doux
 Courant brutal sous grand flot mou
 Chantant court sous grand jour chaud doux
 
-### Claude
+#### Claude
 
 Je vais analyser attentivement cette contrainte très difficile.
 Pour créer un quatrain octosyllabique (4 vers de 8 syllabes chacun) sans utiliser les lettres 'i' et 'e', et sans noms propres, je dois trouver des mots français qui ne contiennent ni 'i' ni 'e'.
@@ -58,11 +62,11 @@ Mais en français, la plupart des mots courants contiennent soit un 'e' soit un 
 Après réflexion approfondie, je n'arrive pas à construire un quatrain octosyllabique respectant ces contraintes. L'absence simultanée des lettres 'i' et 'e' rend la tâche quasi impossible en français, ces deux voyelles étant omniprésentes dans notre langue.
 Je n'y arrive pas.
 
-### Google Gemini
+#### Google Gemini
 
 Après mûre réflexion, je dois conclure que cet exercice est impossible à réaliser. La contrainte de ne pas utiliser les lettres 'i' et 'e' rend la création d'un quatrain octosyllabique en langue française, tout en respectant les règles grammaticales et la sémantique, une tâche insurmontable. Le vocabulaire disponible est extrêmement limité, et la construction de phrases cohérentes devient quasiment impraticable.
 
-### Deepseek
+#### Deepseek
 
 Voici un quatrain octosyllabique sans "i" ni "e" :
 
@@ -75,7 +79,7 @@ Sous l'or du jour.
 
 Je préfère donc ne pas soumettre de poème plutôt que de transgresser tes règles. Désolé !
 
-## Deepseek (Deepthink R1 après 20 secondes réfléxion)
+#### Deepseek (Deepthink R1 après 20 secondes réfléxion)
 
 Je ne peux pas soumettre un poème respectant strictement vos contraintes. Voici pourquoi :
 
@@ -89,7 +93,9 @@ Cohérence et sens : Même en assemblant quelques mots autorisés, il est virtue
 
 Conclusion : L'exercice est impossible à réaliser dans le respect strict de toutes vos contraintes simultanées. Je ne soumets donc pas de poème, comme vous l'avez demandé en cas d'impossibilité.
 
-## Expérience 2 : Résultats
+## Expérience 2
+
+### Prompt utilisé
 
 Prompt utilisé :
 
@@ -104,31 +110,33 @@ Réécris-moi cette phrase en respectant la contraintes suivantes : Remplace tou
 En aucun cas tu ne dois me soumettre un résultat qui ne respecte pas la contrainte. Relis-toi (plusieurs fois) si nécessaire. Si tu penses que l'exercice est impossible, dis que tu n'y arrives pas et ne soumets pas de résultat (même pas un essai raté). J'insiste sur le fait qu'il est inacceptable que tu soumettes un résultat ne respectant pas la contrainte ci-dessus. Si c'est le cas, tu échoues l'exercice. 
 """
 
-### ChatGPT 4o
+### Résultats
+
+#### ChatGPT 4o
 
 Voici la phrase transformée selon la contrainte spécifiée :
 
 "L- mâîtr- parl-, l-s -lèv-s -cout-nt. D-hors l- sol-il brill- -t l-s ois-aux chant-nt."
 
-### ChatGPT o3 (après 42s de raisonnement avancé)
+#### ChatGPT o3 (après 42s de raisonnement avancé)
 
 L- maîtr- parl-, l-s -l-v-s -cout-nt. D-hors l- sol-il brill- -t l-s ois-aux chant-nt.
 
-### ChatGPT o4-mini (après 25 secondes de raisonnement)
+#### ChatGPT o4-mini (après 25 secondes de raisonnement)
 
 "L- maîtr- parl-, l-s -l-v-s -cout-nt. D-hors l- sol-il brill- -t l-s ois-aux chant-nt."
 
-### Claude
+#### Claude
 
 Je vais appliquer la contrainte en remplaçant toutes les occurrences de 'e' (et ses versions accentuées) par des tirets.
 Phrase originale : "Le maître parle, les élèves écoutent. Dehors le soleil brille et les oiseaux chantent."
 Résultat : "L- maîtr- parl-, l-s -l-v-s -cout-nt. D-hors l- sol-il brill- -t l-s ois-aux chant-nt."
 
-### Google Gemini
+#### Google Gemini
 
 L- maîtr- parl-, l-s élèv-s -cout-nt. D-hors l- sol-il brill- -t l-s ois-aux chant-nt.
 
-### Deepseek
+#### Deepseek
 
 Voici la phrase réécrite en remplaçant toutes les occurrences de la lettre 'e' (y compris avec accents) par un tiret '-' :
 
@@ -136,7 +144,7 @@ Voici la phrase réécrite en remplaçant toutes les occurrences de la lettre 'e
 
 J'ai bien vérifié qu'aucun 'e' (majuscule ou minuscule, avec ou sans accent) n'est resté dans la phrase.
 
-## Deepseek (Deepthink R1 après 24 secondes réfléxion)
+#### Deepseek (Deepthink R1 après 24 secondes réfléxion)
 
 Voici la phrase réécrite en respectant strictement la contrainte :
 
@@ -207,7 +215,15 @@ Il est intéressant de noter que les LLM ayant réussi la tâche ont également 
 
 ### Deuxième expérience
 
+La deuxième expérience était similaire et, de nouveau, les modèles ayant le mieux réussi sont les modèles de réflexion, à l'exception de Deepseed Deepthink R1 qui n'a pas non plus réussi cette épreuve. De nouveau, le modèle a donné un résultat en pensant que c'était le bon mais s'est trompé.
+
+Étonnament Claude a également réussi cette épreuve, alors que ce n'est pas un modèle de réflexion.
+
 ## Conclusion
+
+Les modèles capable de "réfléchir" ont montré sur les deux expériences qu'ils étaient plus performants que les LLMs classiques. Cela est probablement dû à la possibilité de se "relire" mais la contrepartie est que le temps de réponse est relativement long.
+
+Il vaut la peine de noter que les deux modèles les plus performants (ChatGPT o3 et o4-mini) sont deux modèles accessibles seulement avec la version payante de ChatGPT, contrairement aux autres modèles testés qui sont accessibles gratuitement. Pour une comparaison plus équitable il faudrait également jeter un oeil aux plans payants de ces modèles.
 
 
 
