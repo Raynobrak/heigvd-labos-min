@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Pour ce mini-projet, nous avons décidé de tester différents LLMs pour découvrir dans quelle mesure ils étaient capables de répondre à des questions ciblant l'orthographe des mots. Nous avons mis en place deux "challenges" : un ou le but est d'écrire un poème en respectant certaines contraintes au niveau des lettres et le deuxième consistait à remplacer certains caractères d'une phrase par une autre.
+Pour ce mini-projet, nous avons décidé de tester différents LLMs pour découvrir dans quelle mesure ils étaient capables de répondre à des questions ciblant l'orthographe des mots. Nous avons mis en place deux "challenges" : un ou le but est d'écrire un poème en respectant certaines contraintes au niveau des lettres et le deuxième consistait à remplacer certains caractères d'une phrase par d'autres.
 
 Le but de ces deux expériences est de voir à quel point les modèles sont conscients des lettres contenues dans les mots qu'ils utilisent.
 
